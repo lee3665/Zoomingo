@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+  Name: Junguk Lee
+  Date: June 9, 2020
+  Section: CSE 154 AK
+  This is the zoomingo.html page which deals with zoomingo game
+  ***
+-->
+<html lang="en">
+  <head>
+    <title>Zoomingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="zoomingo.js"></script>
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+      <section id="main">
+        <h1>Welcome to Junguk's zoomingo!</h1>
+        <div id="info">
+          <div class="data">
+            <label for="name">Write your name: </label>
+            <input id="name" name="name" type="text">
+          </div>
+          <div class="data">
+            <label for="size-select">Choose a board size: </label>
+            <select id="size-select">
+              <option value="empty" selected>--Choose board size--</option>
+              <option value="9">3x3</option>
+              <option value="25">5x5</option>
+              <option value="49">7x7</option>
+              <option value="81">9x9</option>
+            </select>
+
+          </div>
+        </div>
+        <div id="button">
+          <button id="new-game">New Game</button>
+          <button id="reset">Reset</button>
+          <button id="resume" disabled>resume game</button>
+        </div>
+        <p id="error" class="hidden"></p>
+        <p id="result-message"></p>
+        <div id="board">
+        </div>
+        <button id="bingo">Bingo!</button>
+
+      </section>
+    </main>
+  </body>
+</html>

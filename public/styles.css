@@ -1,0 +1,53 @@
+/*
+  Name: Junguk Lee
+  Date: June 9, 2020
+  Section: CSE 154 AK
+  This is the style.css page for zoomingo.html. It makes a better style of
+  zoomingo game.
+*/
+
+body {
+  text-align: center;
+  align-items: center;
+}
+
+#error {
+  color: red;
+}
+
+#board {
+  text-align: center;
+  height: 100%;
+  width: 70%;
+  margin: 30px auto 30px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+.scenario {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 0px;
+  font-size: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  background-color: lightblue;
+}
+
+.square {
+  border: 1px solid black;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  justify-content: center;
+  height: 50px;
+}
+
+.hidden {
+  display: none;
+}
