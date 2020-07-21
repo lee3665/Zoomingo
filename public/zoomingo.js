@@ -2,6 +2,7 @@
  * Name: Junguk Lee
  * Date: June 9, 2020
  * Section: CSE 154 AK
+ * Hello
  *
  * This is the zoomingo.js to create client-side and send request to the
  * server side. This js implement UI and get data from the server

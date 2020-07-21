@@ -53,6 +53,7 @@ app.post('/selectScenario', async function(req, res) {
     let updateSql = "UPDATE game_state SET selected_scenario_ids=? WHERE game_id=?";
     let scenarios = await executeSqlWithOneParam(originalSql, gameId);
     let given = JSON.parse(scenarios["given_scenario_ids"]);
+
     if (given.includes(selectedId)) {
       let selectedScenario = scenarios["selected_scenario_ids"];
       selectedScenario = JSON.parse(selectedScenario);
